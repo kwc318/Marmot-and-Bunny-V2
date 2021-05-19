@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class InkScript : MonoBehaviour
 {
@@ -25,20 +26,31 @@ public class InkScript : MonoBehaviour
     public Sprite bedroom;
     public Sprite wsp;
     public Sprite dark;
-    public Sprite marjorie; 
+    public Sprite marjorie;
+    public Sprite twentyexchange;
+    public GameObject centralImages;
+    public Sprite Toffee;
+    public Sprite Shopee;
     public float leftCharacterPosition;
     public float rightCharacterPosition;
     public float spriteActivateHeight;
     public float spriteDeactivateHeight;
     public float spriteZPosition;
+    public float NameFontSize;
+    public float StoryFontSize;
     public bool leftIsActivated;
     public bool rightIsActivated;
     public bool leftLightup;
     public bool rightLightup;
+    public bool videoPlayerIsActivated;
+    public bool centralImagesIsActivated;
+    public GameObject videoPlayerHolder;
     public AudioSource squee;
     public AudioSource meow;
     public AudioSource boof;
     public Animator whiteFade;
+    public Animator blackFade;
+    public VideoPlayer videoPlayer;
 
 
     // Start is called before the first frame update
@@ -48,6 +60,8 @@ public class InkScript : MonoBehaviour
         rightIsActivated = false;
         leftLightup = false;
         rightLightup = false;
+        videoPlayerIsActivated = false;
+        centralImagesIsActivated = false;
         story = new Story(inkJSON.text);
         eraseUI();
         refreshUI();
@@ -70,6 +84,28 @@ public class InkScript : MonoBehaviour
             Restart();
             Debug.Log("esq was pressed");
         }
+
+        //Sets the video player as active or inactive
+        if (videoPlayerIsActivated == true)
+        {
+            videoPlayerHolder.SetActive(true);
+        }
+
+        else if (videoPlayerIsActivated == false)
+        {
+            videoPlayerHolder.SetActive(false);
+        }
+
+        //Sets the central image as active or inactive
+        if (centralImagesIsActivated == true)
+        {
+            centralImages.SetActive(true);
+        }
+
+        else if (centralImagesIsActivated == false)
+        {
+            centralImages.SetActive(false);
+        }
     }
 
     void chooseStoryChoice(Choice choice)
@@ -83,6 +119,7 @@ public class InkScript : MonoBehaviour
         eraseUI();
 
         TextMeshProUGUI storyText = Instantiate(textPrefab) as TextMeshProUGUI;
+        storyText.fontSize = StoryFontSize;
 
         string text = loadStoryChunk();
 
@@ -121,7 +158,7 @@ public class InkScript : MonoBehaviour
                         leftCharacter.GetComponent<SpriteRenderer>().sprite = bunnyLight;
                     }
 
-                    if (nametags == "Barny")
+                    if (nametags == "Barny" || nametags == "squee")
                     {
                         leftLightup = true;
                     }
@@ -202,6 +239,7 @@ public class InkScript : MonoBehaviour
         void loadNames()
         {
             TextMeshProUGUI nameText = Instantiate(textPrefab) as TextMeshProUGUI;
+            nameText.fontSize = NameFontSize;
             nameText.text = "<b>" + tags[0] + "</b>";
             nameText.transform.SetParent(names.transform, false);
         }
@@ -215,6 +253,9 @@ public class InkScript : MonoBehaviour
         {
             rightCharacter.GetComponent<SpriteRenderer>().sprite = null;
         }
+
+        playVideo();
+        displayImages();
     }
 
     void eraseUI()
@@ -247,6 +288,11 @@ public class InkScript : MonoBehaviour
         foreach (string locationtags in story.currentTags)
         {
             //Insert nametags here to be shown
+            if (locationtags == "20exchange")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = twentyexchange;
+            }
+
             if (locationtags == "Bedroom")
             {
                 background.GetComponent<SpriteRenderer>().sprite = bedroom;
@@ -312,12 +358,59 @@ public class InkScript : MonoBehaviour
         {
             if (transition == "fadewhite")
             {
-                whiteFade.Play("Fade to White");
+                blackFade.Play("FadeOut");
+            }
+
+            if (transition == "fadeblack")
+            {
+                blackFade.Play("FadeOutBlack");
             }
 
             if (transition == "fadeclear")
             {
-                whiteFade.Play("White to Clear");
+                blackFade.Play("FadeIn");
+            }
+        }
+    }
+
+    void playVideo()
+    {
+        foreach (string videos in story.currentTags)
+        {
+            if (videos == "Intro")
+            {
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Darn U Intro Exported 2020-04-17 02.26.34.mp4");
+                videoPlayer.Play();
+                Debug.Log("vid is playing");
+            }   
+
+            if (videos == "StopVideo")
+            {
+                videoPlayerIsActivated = false;
+            }
+        }
+    }
+
+    void displayImages()
+    {
+        foreach (string Images in story.currentTags)
+        {
+            if (Images == "Toffee")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Toffee;
+            }
+
+            if (Images == "Shopee")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Shopee;
+            }
+
+            if (Images == "Blank")
+            {
+                centralImagesIsActivated = false;
             }
         }
     }

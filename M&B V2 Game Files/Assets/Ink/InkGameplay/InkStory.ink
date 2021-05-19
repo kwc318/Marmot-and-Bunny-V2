@@ -1,16 +1,28 @@
-Barny's Big Day #nospriteboth
+Marnie's Big Day #nospriteboth #20exchange
 
-This is Barny #activateLeft #squee
+This is Marnie! #activateLeft 
 
-It's been a long day, and Barny's eyelids start to droop from hours of playing Design Home and solving Sudoku puzzles #Bedroom 
+She's a Barny! 
 
-I think it's sleepy time! #Barny
+Marnie the Barny!
 
-Barny drifts off to a fitful sleep... #dark
+Hi! #Barny #squee
 
+Marnie lives in a nice apartment with her little fuzzy cat. #Toffee
+
+Toffee is very cute!
+
+It's been a long day at work, and Barny's eyelids start to droop from hours on the phones... #Blank
+
+She still stays up to play Shopee Candy though!  #Shopee
+
+I think it's sleepy time! #Barny #Blank
+
+Barny drifts off to a fitful sleep... #fadeblack
+
+... #dark
 ...
-...
-... #meow #activateRight
+... #activateRight #meow
 
 Ack! Who are you! #Barny
 
@@ -24,9 +36,9 @@ What are you doing here? #Barny
 
 Boof. #Boofies #boof
 
-Erm ok, boof to you too! # Barny
+Erm ok, boof to you too! # Barny #Intro
 
-Im here to take you on an adventure. To visit the ghosts of NYU past... #Boofies
+Im here to take you on an adventure. To visit the ghosts of NYU past... #Boofies #StopVideo
 
 Ooooh sounds like fun! Where to first? #Barny
 
@@ -34,7 +46,7 @@ Boof. #boof
 
 Suddenly... #fadewhite
 
-... #marjorie #fadeclear
+... #fadeclear //#marjorie
 
 Heeeeey! #Barny 
 
@@ -51,4 +63,4 @@ wttw ijqwmsqnn dqend ewojflk dsjakdf sjd;aknf ajsdifmcrhdsaf enidsbnfh njuqwjenu
 * choice 3
 - this is the end 
 asdsd #Barny
--> END
+-> END 
