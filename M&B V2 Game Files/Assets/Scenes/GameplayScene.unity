@@ -619,14 +619,14 @@ RectTransform:
   m_GameObject: {fileID: 754757417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 996770268}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 60}
+  m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 181.7476, y: 181.7476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754757419
@@ -1176,6 +1176,9 @@ MonoBehaviour:
   centralImages: {fileID: 754757417}
   Toffee: {fileID: 21300000, guid: 0a17d6c0ef69ee344b4975ff8fe1c168, type: 3}
   Shopee: {fileID: 21300000, guid: 6e317d8659bed3f4ab8f8c24c45f77d0, type: 3}
+  PidgeonMan: {fileID: 21300000, guid: 26d6f42eeb1109f4595fbab9f3fba08a, type: 3}
+  Students: {fileID: 21300000, guid: 8e1b272c488160844b0fbaa2050cce0c, type: 3}
+  Buskers: {fileID: 21300000, guid: d15d095e8a2f9b4479d259157086cb75, type: 3}
   leftCharacterPosition: -6
   rightCharacterPosition: 5
   spriteActivateHeight: 0.5
@@ -1512,7 +1515,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

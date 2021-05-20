@@ -31,6 +31,9 @@ public class InkScript : MonoBehaviour
     public GameObject centralImages;
     public Sprite Toffee;
     public Sprite Shopee;
+    public Sprite PidgeonMan;
+    public Sprite Students;
+    public Sprite Buskers;
     public float leftCharacterPosition;
     public float rightCharacterPosition;
     public float spriteActivateHeight;
@@ -133,7 +136,7 @@ public class InkScript : MonoBehaviour
         foreach (string nametags in story.currentTags)
         {
             //Insert nametags here to be shown
-            if (nametags == "Barny" || nametags == "marnie" || nametags == "Boofies")
+            if (nametags == "Marnie" || nametags == "marnie" || nametags == "Boofies")
             {
                 loadNames();
                 //activateCharacter();
@@ -141,6 +144,7 @@ public class InkScript : MonoBehaviour
 
             activateCharacter();
             characterlightup();
+            noLightUp();
             playSounds();
             transitions();
 
@@ -158,7 +162,7 @@ public class InkScript : MonoBehaviour
                         leftCharacter.GetComponent<SpriteRenderer>().sprite = bunnyLight;
                     }
 
-                    if (nametags == "Barny" || nametags == "squee")
+                    if (nametags == "Marnie" || nametags == "squee")
                     {
                         leftLightup = true;
                     }
@@ -394,6 +398,18 @@ public class InkScript : MonoBehaviour
         }
     }
 
+    void noLightUp()
+    {
+        foreach (string lightups in story.currentTags)
+        {
+            if (lightups == "noLightUp")
+            {
+                leftLightup = false;
+                rightLightup = false;
+            }
+        }
+    }
+
     void displayImages()
     {
         foreach (string Images in story.currentTags)
@@ -408,6 +424,24 @@ public class InkScript : MonoBehaviour
             {
                 centralImagesIsActivated = true;
                 centralImages.GetComponent<Image>().sprite = Shopee;
+            }
+
+            if (Images == "PidgeonMan")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = PidgeonMan;
+            }
+
+            if (Images == "Students")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Students;
+            }
+
+            if (Images == "Buskers")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Buskers;
             }
 
             if (Images == "Blank")

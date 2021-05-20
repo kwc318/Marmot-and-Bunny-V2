@@ -1,3 +1,7 @@
+-> Introduction
+
+==Introduction==
+
 Marnie's Big Day #nospriteboth #20exchange
 
 This is Marnie! #activateLeft 
@@ -6,7 +10,7 @@ She's a Barny!
 
 Marnie the Barny!
 
-Hi! #Barny #squee
+Hi! #Marnie #squee
 
 Marnie lives in a nice apartment with her little fuzzy cat. #Toffee
 
@@ -16,7 +20,7 @@ It's been a long day at work, and Barny's eyelids start to droop from hours on t
 
 She still stays up to play Shopee Candy though!  #Shopee
 
-I think it's sleepy time! #Barny #Blank
+I think it's sleepy time! #Marnie #Blank
 
 Barny drifts off to a fitful sleep... #fadeblack
 
@@ -24,43 +28,53 @@ Barny drifts off to a fitful sleep... #fadeblack
 ...
 ... #activateRight #meow
 
-Ack! Who are you! #Barny
+Ack! Who are you! #Marnie
 
 My name is Boofies! #Boofies
 
 Boof! #Boofies #boof
 
-Oh hi Boofies, I'm Barnie! #Barny
+Oh hi Boofies, I'm Barnie! #Marnie
 
-What are you doing here? #Barny
+What are you doing here? #Marnie
 
 Boof. #Boofies #boof
 
-Erm ok, boof to you too! # Barny #Intro
+Erm ok, boof to you too! # Barny //#Intro
 
-Im here to take you on an adventure. To visit the ghosts of NYU past... #Boofies #StopVideo
+Im here to take you on an adventure. To visit the ghosts of NYU past... #Boofies //#StopVideo
 
-Ooooh sounds like fun! Where to first? #Barny
+Ooooh sounds like fun! Where to first? #Marnie
 
 Boof. #boof
 
 Suddenly... #fadewhite
 
-... #fadeclear #marjorie
+... #fadeclear #WSP
 
-Heeeeey! #Barny 
+Heeeeey! #Marnie 
 
-I know this person! #Barny 
+I know this place! #Marnie 
 
-//It's a beautiful day outside! #WSP 
+It's a beautiful day outside! #noLightUp
 
-hallo there boofies #Barny
+Its Washington Square Park! #Marnie 
+
+Barny takes in the nostalgic sights and sounds of... #noLightUp
+
+NYU students... #Students
+
+Buskers... #Buskers
+
+and even Pidgeon Man! #PidgeonMan
+
+hallo there boofies #Marnie
 asdsad #activateRight
-gdew #Barny
+gdew #Marnie
 wttw ijqwmsqnn dqend ewojflk dsjakdf sjd;aknf ajsdifmcrhdsaf enidsbnfh njuqwjenufbjds sndjfdjsdfn jsdfnsjd fsdjnf
 * [choice 1]
-* choice 2
-* choice 3
+* [choice 2]
+* [choice 3]
 - this is the end 
-asdsd #Barny
+asdsd #Marnie
 -> END 
