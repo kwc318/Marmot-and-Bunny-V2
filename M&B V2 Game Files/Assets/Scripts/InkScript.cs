@@ -358,7 +358,8 @@ public class InkScript : MonoBehaviour
         {
             if (transition == "fadewhite")
             {
-                blackFade.Play("FadeOut");
+                blackFade.Play("FadeWhiteBackground");
+                Debug.Log("Play fade out");
             }
 
             if (transition == "fadeblack")
@@ -368,7 +369,8 @@ public class InkScript : MonoBehaviour
 
             if (transition == "fadeclear")
             {
-                blackFade.Play("FadeIn");
+                blackFade.Play("FadeClearBackground");
+                Debug.Log("Play fade in");
             }
         }
     }
