@@ -32,9 +32,11 @@ Ack! Who are you! #Marnie
 
 My name is Boofies! #Boofies
 
+Boofies the Beaver! #Boofies
+
 Boof! #Boofies #boof
 
-Oh hi Boofies, I'm Barnie! #Marnie
+Oh hi Boofies, I'm Marnie! #Marnie
 
 What are you doing here? #Marnie
 
@@ -48,7 +50,7 @@ Ooooh sounds like fun! Where to first? #Marnie
 
 Boof. #boof
 
-Suddenly... #fadewhite
+Suddenly... #fadewhite #teleport
 
 ... #fadeclear #WSP
 
@@ -68,13 +70,46 @@ Buskers... #Buskers
 
 and even Pidgeon Man! #PidgeonMan
 
-hallo there boofies #Marnie
-asdsad #activateRight
-gdew #Marnie
-wttw ijqwmsqnn dqend ewojflk dsjakdf sjd;aknf ajsdifmcrhdsaf enidsbnfh njuqwjenufbjds sndjfdjsdfn jsdfnsjd fsdjnf
-* [choice 1]
-* [choice 2]
-* [choice 3]
+This is great Boofies, but why did you bring me here? #Marnie #Blank
+
+Well this is where it all started! #Boofies
+
+Boof! #boof
+
+And what better way to celebrate a special day than with special people! #Boofies
+
+Ohhhhh! #Marnie #squee
+
+So exciting! Where do we start?
+
+You tell me! #Boofies 
+
+Where would you like to go?
+* [56 Henry Street] -> END 
+* [Saigon Shack] -> END 
+* [Bobst] -> END 
+* [Boba Guys] -> END 
+* [BKLYN AIR] ->BKLYNAIR
+
+==BKLYNAIR==
+
+Lets go to BKLYN AIR! #Marnie
+
+309 Gold St, eh? #Boofies
+
+To Brooklyn we go then! #fadewhite #teleport
+
+... #fadeclear #bklynair
+
+Wow this place is a lot neater than I remember... #Marnie
+
+Hey! #Lincoln
+
+
+
+
+
+
 - this is the end 
 asdsd #Marnie
 -> END 

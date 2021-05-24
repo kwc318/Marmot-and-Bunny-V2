@@ -20,6 +20,7 @@ public class InkScript : MonoBehaviour
     public GameObject leftCharacter;
     public Sprite marmotDark;
     public Sprite marmotLight;
+    public Sprite lincoln;
     public Sprite bunnyDark;
     public Sprite bunnyLight;
     public GameObject background;
@@ -28,6 +29,7 @@ public class InkScript : MonoBehaviour
     public Sprite dark;
     public Sprite marjorie;
     public Sprite twentyexchange;
+    public Sprite bklynair;
     public GameObject centralImages;
     public Sprite Toffee;
     public Sprite Shopee;
@@ -51,6 +53,7 @@ public class InkScript : MonoBehaviour
     public AudioSource squee;
     public AudioSource meow;
     public AudioSource boof;
+    public AudioSource teleport;
     public Animator whiteFade;
     public Animator blackFade;
     public VideoPlayer videoPlayer;
@@ -200,6 +203,12 @@ public class InkScript : MonoBehaviour
                         rightLightup = true;
                     }
 
+                    else if (nametags == "Lincoln")
+                    {
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight + 1.0f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = lincoln;
+                    }
+
                     else if (nametags == "nospriteboth")
                     {
                         rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight, spriteZPosition);
@@ -317,6 +326,11 @@ public class InkScript : MonoBehaviour
                 background.GetComponent<SpriteRenderer>().sprite = marjorie;
                 background.transform.position = new Vector3(2, 0, 1);
             }
+
+            if (locationtags == "bklynair")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = bklynair;
+            }
         }
     }
 
@@ -337,6 +351,11 @@ public class InkScript : MonoBehaviour
             if (sounds == "boof")
             {
                 boof.Play();
+            }
+
+            if (sounds == "teleport")
+            {
+                teleport.Play();
             }
         }
     }
