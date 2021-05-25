@@ -853,3 +853,4 @@ Received Import Request.
 Start importing Assets/Sprites/Lincoln sprite PS.psd using Guid(8946d6eb9e39fc94fb4a6db83fc27637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f33885b78cd76b2a39f43ede216ab8') in 0.136476 seconds
   Import took 0.141749 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

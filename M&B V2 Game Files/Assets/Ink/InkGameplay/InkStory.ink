@@ -20,7 +20,7 @@ It's been a long day at work, and Barny's eyelids start to droop from hours on t
 
 She still stays up to play Shopee Candy though!  #Shopee
 
-I think it's sleepy time! #Marnie #Blank
+I think it's sleepy time! #Blank #Marnie
 
 Barny drifts off to a fitful sleep... #fadeblack
 
@@ -70,7 +70,7 @@ Buskers... #Buskers
 
 and even Pidgeon Man! #PidgeonMan
 
-This is great Boofies, but why did you bring me here? #Marnie #Blank
+This is great Boofies, but why did you bring me here? #Blank #Marnie
 
 Well this is where it all started! #Boofies
 
@@ -83,6 +83,10 @@ Ohhhhh! #Marnie #squee
 So exciting! Where do we start?
 
 You tell me! #Boofies 
+
+-> ChoiceSelection
+
+==ChoiceSelection==
 
 Where would you like to go?
 * [56 Henry Street] -> END 
@@ -103,12 +107,93 @@ To Brooklyn we go then! #fadewhite #teleport
 
 Wow this place is a lot neater than I remember... #Marnie
 
-Hey! #Lincoln
+Diu!!! #Lincoln 
 
+Ack! #Marnie 
 
+Why you say this about my beautiful apartment huh!? You should know its always spotless! #Lincoln
 
+Oh sorry Linky... #Marnie 
 
+But we both know that isn't true... #Marnie
 
+Ouch... #Lincoln
+
+Anyway, what are you doing here? You just come to insult my house? #Lincoln
+
+Well if I'm not welcome here then I'm leaving. #Marnie
+
+Lets go Boofies! #Marnie
+
+Right behind you! #Boofies
+
+WAIT! #Lincoln
+
+Ok, ok I'm sorry... #Lincoln
+
+Please stay as long as you want... #Lincoln
+
+Hmpff! #Marnie
+
+Its gonna take more than that to keep me here... #Marnie
+
+Alright I get it... #Lincoln
+
+Please take this video as my apology... #Lincoln
+
+*[Play Video]
+
+... #lincvideo
+
+... #StopVideo
+
+Wow. #Marnie
+
+I don't even know why you thought showing me that would change my mind... #Marnie
+
+Me neither. #Boofies 
+
+Boof. #Boofies #boof
+
+Uh #Lincoln
+
+Erm #Lincoln
+
+I HAVE MORE! #Lincoln
+
+Take a look at this!!! #Lincoln #Lincpicone
+
+Just two Barnies! #Lincoln
+
+I think this is so cute <3 #Lincoln
+
+... #Marnie
+
+And this! #Lincoln #Lincpictwo
+
+We really do look like the perfect couple here! #Lincoln
+
+... #Marnie
+
+... #Boofies
+
+Guys? #Lincoln
+
+Time to go! #Blank #Marnie
+
+Bye! #Boofies
+
+Nooooooo...... #Lincoln #fadewhite #teleport
+
+... #fadeclear #WSP
+
+That was weird... #Marnie
+
+You got that right... #Boofies
+
+Welp, where to next? #Boofies
+
+->ChoiceSelection
 
 - this is the end 
 asdsd #Marnie

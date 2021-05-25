@@ -36,6 +36,8 @@ public class InkScript : MonoBehaviour
     public Sprite PidgeonMan;
     public Sprite Students;
     public Sprite Buskers;
+    public Sprite Lincpicone;
+    public Sprite Lincpictwo;
     public float leftCharacterPosition;
     public float rightCharacterPosition;
     public float spriteActivateHeight;
@@ -54,6 +56,7 @@ public class InkScript : MonoBehaviour
     public AudioSource meow;
     public AudioSource boof;
     public AudioSource teleport;
+    public AudioSource bgm;
     public Animator whiteFade;
     public Animator blackFade;
     public VideoPlayer videoPlayer;
@@ -139,7 +142,7 @@ public class InkScript : MonoBehaviour
         foreach (string nametags in story.currentTags)
         {
             //Insert nametags here to be shown
-            if (nametags == "Marnie" || nametags == "marnie" || nametags == "Boofies")
+            if (nametags == "Marnie" || nametags == "marnie" || nametags == "Boofies" || nametags == "Lincoln")
             {
                 loadNames();
                 //activateCharacter();
@@ -198,15 +201,17 @@ public class InkScript : MonoBehaviour
                         rightCharacter.GetComponent<SpriteRenderer>().sprite = marmotLight;
                     }
 
-                    if (nametags == "Boofies" || nametags == "boof")
+                    else if (nametags == "Boofies" || nametags == "boof")
                     {
                         rightLightup = true;
                     }
 
                     else if (nametags == "Lincoln")
                     {
+                        rightLightup = false;
                         rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight + 1.0f, spriteZPosition);
                         rightCharacter.GetComponent<SpriteRenderer>().sprite = lincoln;
+                        Debug.Log("Linc");
                     }
 
                     else if (nametags == "nospriteboth")
@@ -408,11 +413,21 @@ public class InkScript : MonoBehaviour
                 videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Darn U Intro Exported 2020-04-17 02.26.34.mp4");
                 videoPlayer.Play();
                 Debug.Log("vid is playing");
-            }   
+            }
+
+            if (videos == "lincvideo")
+            {
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "linconlnVideo.mp4");
+                videoPlayer.Play();
+                bgm.Stop();
+                Debug.Log("lincvid is playing");
+            }
 
             if (videos == "StopVideo")
             {
                 videoPlayerIsActivated = false;
+                bgm.Play();
             }
         }
     }
@@ -461,6 +476,18 @@ public class InkScript : MonoBehaviour
             {
                 centralImagesIsActivated = true;
                 centralImages.GetComponent<Image>().sprite = Buskers;
+            }
+
+            if (Images == "Lincpicone")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Lincpicone;
+            }
+
+            if (Images == "Lincpictwo")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Lincpictwo;
             }
 
             if (Images == "Blank")
