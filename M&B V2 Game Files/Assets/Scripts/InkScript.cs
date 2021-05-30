@@ -21,15 +21,30 @@ public class InkScript : MonoBehaviour
     public Sprite marmotDark;
     public Sprite marmotLight;
     public Sprite lincoln;
+    public Sprite petrina;
+    public Sprite joshua;
+    public Sprite marjorie;
+    public Sprite christina;
+    public Sprite phionna;
+    public Sprite isaacone;
+    public Sprite isaactwo;
+    public Sprite deepak;
+    public Sprite yash;
+    public Sprite keefers;
     public Sprite bunnyDark;
     public Sprite bunnyLight;
     public GameObject background;
     public Sprite bedroom;
     public Sprite wsp;
     public Sprite dark;
-    public Sprite marjorie;
+    //public Sprite marjorie;
     public Sprite twentyexchange;
     public Sprite bklynair;
+    public Sprite henry;
+    public Sprite henryInside;
+    public Sprite bobaGuys;
+    public Sprite ryde;
+    public Sprite saigonShack;
     public GameObject centralImages;
     public Sprite Toffee;
     public Sprite Shopee;
@@ -38,6 +53,20 @@ public class InkScript : MonoBehaviour
     public Sprite Buskers;
     public Sprite Lincpicone;
     public Sprite Lincpictwo;
+    public Sprite Marjpicone;
+    public Sprite Marjpictwo;
+    public Sprite Christinapic;
+    public Sprite Phipicone;
+    public Sprite Phipictwo;
+    public Sprite Deeppicone;
+    public Sprite Deeppictwo;
+    public Sprite Deeppicthree;
+    public Sprite Yashpicone;
+    public Sprite Yashpictwo;
+    public Sprite Keeferspicone;
+    public Sprite Keeferspictwo;
+    public Sprite Keeferspicthree;
+    public Sprite Keeferspicfour;
     public float leftCharacterPosition;
     public float rightCharacterPosition;
     public float spriteActivateHeight;
@@ -51,15 +80,22 @@ public class InkScript : MonoBehaviour
     public bool rightLightup;
     public bool videoPlayerIsActivated;
     public bool centralImagesIsActivated;
+    public bool Isaaconeortwo;
     public GameObject videoPlayerHolder;
     public AudioSource squee;
     public AudioSource meow;
     public AudioSource boof;
     public AudioSource teleport;
+    public AudioSource hahaha;
+    public AudioSource cry;
+    public AudioSource zoom;
+    public AudioSource panting;
     public AudioSource bgm;
     public Animator whiteFade;
     public Animator blackFade;
+    public Animator rcharacter;
     public VideoPlayer videoPlayer;
+    public AudioSource vidAudio;
 
 
     // Start is called before the first frame update
@@ -142,7 +178,7 @@ public class InkScript : MonoBehaviour
         foreach (string nametags in story.currentTags)
         {
             //Insert nametags here to be shown
-            if (nametags == "Marnie" || nametags == "marnie" || nametags == "Boofies" || nametags == "Lincoln")
+            if (nametags == "Marnie" || nametags == "marnie" || nametags == "Boofies" || nametags == "Lincoln" || nametags == "Petrina" || nametags == "Joshua" || nametags == "Marjorie" || nametags == "Christina" || nametags == "Phionna" || nametags == "Isaac" || nametags == "Isaac (Instructor)" || nametags == "Deepak" || nametags == "Yash" || nametags == "Keefers")
             {
                 loadNames();
                 //activateCharacter();
@@ -214,8 +250,88 @@ public class InkScript : MonoBehaviour
                         Debug.Log("Linc");
                     }
 
-                    else if (nametags == "nospriteboth")
+                    else if (nametags == "Petrina")
                     {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = petrina;
+                        Debug.Log("Pet");
+                    }
+
+                    else if (nametags == "Joshua")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight - 0.5f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = joshua;
+                        Debug.Log("Josh");
+                    }
+
+                    else if (nametags == "Marjorie")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = marjorie;
+                        Debug.Log("Margy");
+                    }
+
+                    else if (nametags == "Christina")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = christina;
+                        Debug.Log("Christina");
+                    }
+
+                    else if (nametags == "Phionna")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = phionna;
+                        Debug.Log("Phionna");
+                    }
+
+                    else if (nametags == "Isaac")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight + 0.5f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = isaacone;
+                        Debug.Log("Isaac");
+                    }
+
+                    else if (nametags == "Isaac (Instructor)")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight + 1.75f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = isaactwo;
+                        Debug.Log("Isaac (Instructor)");
+                    }
+
+                    else if (nametags == "Deepak")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight - 1.0f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = deepak;
+                        Debug.Log("Deepak");
+                    }
+
+                    else if (nametags == "Yash")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight - 0.5f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = yash;
+                        Debug.Log("Yash");
+                    }
+
+                    else if (nametags == "Keefers")
+                    {
+                        rightLightup = false;
+                        rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight - 1.5f, spriteZPosition);
+                        rightCharacter.GetComponent<SpriteRenderer>().sprite = keefers;
+                        Debug.Log("Keefers");
+                    }
+
+                    else if (nametags == "nospriteboth")
+                    {   
                         rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight, spriteZPosition);
                         rightCharacter.GetComponent<SpriteRenderer>().sprite = null;
                     }
@@ -326,15 +442,40 @@ public class InkScript : MonoBehaviour
                 background.GetComponent<SpriteRenderer>().sprite = dark;
             }
 
-            if (locationtags == "marjorie")
-            {
-                background.GetComponent<SpriteRenderer>().sprite = marjorie;
-                background.transform.position = new Vector3(2, 0, 1);
-            }
+            //if (locationtags == "marjorie")
+            //{
+            //    background.GetComponent<SpriteRenderer>().sprite = marjorie;
+            //    background.transform.position = new Vector3(2, 0, 1);
+            //}
 
             if (locationtags == "bklynair")
             {
                 background.GetComponent<SpriteRenderer>().sprite = bklynair;
+            }
+
+            if (locationtags == "henry")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = henry;
+            }
+
+            if (locationtags == "henryinside")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = henryInside;
+            }
+
+            if (locationtags == "bobaguys")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = bobaGuys;
+            }
+
+            if (locationtags == "ryde")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = ryde;
+            }
+
+            if (locationtags == "saigonShack")
+            {
+                background.GetComponent<SpriteRenderer>().sprite = saigonShack;
             }
         }
     }
@@ -361,6 +502,29 @@ public class InkScript : MonoBehaviour
             if (sounds == "teleport")
             {
                 teleport.Play();
+            }
+
+            if (sounds == "cry")
+            {
+                cry.Play();
+            }
+
+            if (sounds == "zoom")
+            {
+                zoom.Play();
+            }
+
+            if (sounds == "panting")
+            {
+                panting.Play();
+            }
+
+            if (sounds == "hahaha")
+            {
+                hahaha.Play();
+                rightLightup = false;
+                rightCharacter.transform.position = new Vector3(rightCharacterPosition, spriteActivateHeight - 0.5f, spriteZPosition);
+                rightCharacter.GetComponent<SpriteRenderer>().sprite = joshua;
             }
         }
     }
@@ -400,6 +564,16 @@ public class InkScript : MonoBehaviour
                 blackFade.Play("FadeClearBackground");
                 Debug.Log("Play fade in");
             }
+
+            if (transition == "keeferstransform")
+            {
+                rcharacter.enabled = true;
+            }
+
+            if (transition == "ending")
+            {
+                whiteFade.Play("ThankYou");
+            }
         }
     }
 
@@ -417,15 +591,87 @@ public class InkScript : MonoBehaviour
 
             if (videos == "lincvideo")
             {
+                bgm.Stop();
                 videoPlayerIsActivated = true;
                 videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "linconlnVideo.mp4");
+                videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                videoPlayer.controlledAudioTrackCount = 1;
+                videoPlayer.EnableAudioTrack(0, true);
+                videoPlayer.SetTargetAudioSource(0, vidAudio);
+                videoPlayer.aspectRatio = VideoAspectRatio.FitVertically;
                 videoPlayer.Play();
-                bgm.Stop();
                 Debug.Log("lincvid is playing");
+            }
+
+            if (videos == "petvideo")
+            {
+                bgm.Stop();
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "PetrinaVideo.mp4");
+                videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                videoPlayer.controlledAudioTrackCount = 1;
+                videoPlayer.EnableAudioTrack(0, true);
+                videoPlayer.SetTargetAudioSource(0, vidAudio);
+                videoPlayer.Play();
+                Debug.Log("petvid is playing");
+            }
+
+            if (videos == "joshvideo")
+            {
+                bgm.Stop();
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "JoshVideo.mp4");
+                videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                videoPlayer.controlledAudioTrackCount = 1;
+                videoPlayer.EnableAudioTrack(0, true);
+                videoPlayer.SetTargetAudioSource(0, vidAudio);
+                //videoPlayer.aspectRatio = VideoAspectRatio.FitVertically;
+                videoPlayer.Play();
+                Debug.Log("joshvid is playing");
+            }
+
+            if (videos == "joshpetvideo")
+            {
+                bgm.Stop();
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "JoshPetVideo.mp4");
+                videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                videoPlayer.controlledAudioTrackCount = 1;
+                videoPlayer.EnableAudioTrack(0, true);
+                videoPlayer.SetTargetAudioSource(0, vidAudio);
+                videoPlayer.Play();
+                Debug.Log("joshpetvid is playing");
+            }
+
+            if (videos == "phivideo")
+            {
+                bgm.Stop();
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "PhionnaVideo.mp4");
+                videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                videoPlayer.controlledAudioTrackCount = 1;
+                videoPlayer.EnableAudioTrack(0, true);
+                videoPlayer.SetTargetAudioSource(0, vidAudio);
+                videoPlayer.Play();
+                Debug.Log("phivid is playing");
+            }
+
+            if (videos == "keefersvideo")
+            {
+                bgm.Stop();
+                videoPlayerIsActivated = true;
+                videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "KeefersVideo.mp4");
+                videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                videoPlayer.controlledAudioTrackCount = 1;
+                videoPlayer.EnableAudioTrack(0, true);
+                videoPlayer.SetTargetAudioSource(0, vidAudio);
+                videoPlayer.Play();
+                Debug.Log("keefersvid is playing");
             }
 
             if (videos == "StopVideo")
             {
+                videoPlayer.aspectRatio = VideoAspectRatio.NoScaling;
                 videoPlayerIsActivated = false;
                 bgm.Play();
             }
@@ -488,6 +734,90 @@ public class InkScript : MonoBehaviour
             {
                 centralImagesIsActivated = true;
                 centralImages.GetComponent<Image>().sprite = Lincpictwo;
+            }
+
+            if(Images == "Marjpicone")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Marjpicone;
+            }
+
+            if (Images == "Marjpictwo")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Marjpictwo;
+            }
+
+            if (Images == "Christinapic")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Christinapic;
+            }
+
+            if (Images == "Phipicone")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Phipicone;
+            }
+
+            if (Images == "Phipictwo")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Phipictwo;
+            }
+
+            if (Images == "Deeppicone")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Deeppicone;
+            }
+
+            if (Images == "Deeppictwo")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Deeppictwo;
+            }
+
+            if (Images == "Deeppicthree")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Deeppicthree;
+            }
+
+            if (Images == "Yashpicone")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Yashpicone;
+            }
+
+            if (Images == "Yashpictwo")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Yashpictwo;
+            }
+
+            if (Images == "Keeferspicone")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Keeferspicone;
+            }
+
+            if (Images == "Keeferspictwo")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Keeferspictwo;
+            }
+
+            if (Images == "Keeferspicthree")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Keeferspicthree;
+            }
+
+            if (Images == "Keeferspicfour")
+            {
+                centralImagesIsActivated = true;
+                centralImages.GetComponent<Image>().sprite = Keeferspicfour;
             }
 
             if (Images == "Blank")
